@@ -12,13 +12,32 @@ export default function Nav() {
       >
         Home
       </NavLink>
+
+
       <NavLink
-        to="/CV"
+        to="/about"
         className={({ isActive }) =>
           isActive ? "active font-bold uppercase" : "font-bold uppercase"
         }
       >
-        cv
+        About
+      </NavLink>
+
+      <NavLink
+        to="/resume"
+        className={({ isActive }) =>
+          isActive ? "active font-bold uppercase" : "font-bold uppercase"
+        }
+      >
+        Resume
+      </NavLink>
+      <NavLink
+        to="/portfolio"
+        className={({ isActive }) =>
+          isActive ? "active font-bold uppercase" : "font-bold uppercase"
+        }
+      >
+        Portfolio
       </NavLink>
     </nav>
   );

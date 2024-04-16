@@ -1,7 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./views/Home";
-import CV from "./views/cv";
+import About from "./views/About";
+import Resume from "./views/Resume";
+import Portafolio from "./views/Portafolio";
+
 import "./App.css";
 
 function App() {
@@ -10,8 +13,9 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cv" element={<CV />} />
-    
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/portfolio" element={<Portafolio />} />
       </Routes>
     </>
   );
