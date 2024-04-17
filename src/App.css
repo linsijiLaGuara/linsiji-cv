@@ -1,7 +1,5 @@
 ::root {
     background-color: rgb(4, 4, 3);
-}
-
-body {
-    background-color: rgb(1, 10, 10);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    background-image: linear-gradient(to right top, #092b1e, #092a1e, #0a291f, #0a281f, #0b271f, #0c2b24, #0e2e28, #0f322d, #113c38, #124645, #135052, #155a60);
 }
