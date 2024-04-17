@@ -4,9 +4,9 @@ import { useTransition, animated } from "react-spring";
 const Animacion = () => {
   const [index, setIndex] = useState(0);
   const words = [
-    "I'm Developer 💻",
-    "I'm travel Youtuber 🎥",
-    "I'm fans shakira 🎶",
+    "I'm a Developer 💻",
+    "I'm a travel YouTuber 🎥",
+    "I'm a fan of Shakira 🎶",
   ];
 
   const transitions = useTransition(words[index], {

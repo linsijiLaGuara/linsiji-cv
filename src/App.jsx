@@ -4,7 +4,7 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Resume from "./views/Resume";
 import Portafolio from "./views/Portafolio";
-
+import {Footercom} from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portafolio />} />
       </Routes>
+      <Footercom />
     </>
   );
 }

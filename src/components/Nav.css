@@ -4,12 +4,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-image: linear-gradient(to right top,  #b0eff1, #057a6e);
+    background-image: linear-gradient(to right top, #450684, #1a0034);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .logo {
     width: 5%;
+    padding-left: 1%;
 }
 
 .spanclass {
