@@ -1,44 +1,34 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouseUser,
+  faUser,
+  faBriefcase,
+  faFileInvoice,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   return (
-    <nav className="navbar flex gap-4 items-center justify-end">
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          isActive ? "active font-bold uppercase" : "font-bold uppercase"
-        }
-      >
-        Home
-      </NavLink>
+    <nav className="navbar">
+      <h3 className="spanclass">Linsiji</h3>
+      <div className="nav-links">
+        <NavLink exact to="/" activeClassName="active" className="nav-link">
+          <FontAwesomeIcon icon={faHouseUser} /> Home
+        </NavLink>
 
+        <NavLink to="/about" activeClassName="active" className="nav-link">
+          <FontAwesomeIcon icon={faUser} /> About
+        </NavLink>
 
-      <NavLink
-        to="/about"
-        className={({ isActive }) =>
-          isActive ? "active font-bold uppercase" : "font-bold uppercase"
-        }
-      >
-        About
-      </NavLink>
+        <NavLink to="/resume" activeClassName="active" className="nav-link">
+          <FontAwesomeIcon icon={faFileInvoice} /> Resume
+        </NavLink>
 
-      <NavLink
-        to="/resume"
-        className={({ isActive }) =>
-          isActive ? "active font-bold uppercase" : "font-bold uppercase"
-        }
-      >
-        Resume
-      </NavLink>
-      <NavLink
-        to="/portfolio"
-        className={({ isActive }) =>
-          isActive ? "active font-bold uppercase" : "font-bold uppercase"
-        }
-      >
-        Portfolio
-      </NavLink>
+        <NavLink to="/portafolio" activeClassName="active" className="nav-link">
+          <FontAwesomeIcon icon={faBriefcase} /> Portafolio
+        </NavLink>
+      </div>
     </nav>
   );
 }

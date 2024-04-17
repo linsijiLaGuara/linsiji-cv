@@ -1,14 +1,37 @@
-a.active {
-    color: darkgreen;
-}
-
-
-
-
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    gap: 2%;
+    padding: 10px;
+    background-image: linear-gradient(to right top, #ccacff, #e6b0f1, #f6b7e5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.spanclass {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20;
+    align-items: flex-start
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #c407f8;
+}
+
+.active {
+    color: rgb(254, 254, 254);
+    font-weight: bold;
 }
