@@ -1,3 +1,4 @@
+// Nav.js
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,11 +8,13 @@ import {
   faBriefcase,
   faFileInvoice,
 } from "@fortawesome/free-solid-svg-icons";
+import logo from "/public/img/logilinsiji.png";
 
 export default function Nav() {
   return (
     <nav className="navbar">
-      <h3 className="spanclass">Linsiji</h3>
+      <img src={logo} alt="logo" className="logo" />
+
       <div className="nav-links">
         <NavLink exact to="/" activeClassName="active" className="nav-link">
           <FontAwesomeIcon icon={faHouseUser} /> Home
@@ -25,8 +28,8 @@ export default function Nav() {
           <FontAwesomeIcon icon={faFileInvoice} /> Resume
         </NavLink>
 
-        <NavLink to="/portafolio" activeClassName="active" className="nav-link">
-          <FontAwesomeIcon icon={faBriefcase} /> Portafolio
+        <NavLink to="/portfolio" activeClassName="active" className="nav-link">
+          <FontAwesomeIcon icon={faBriefcase} /> Portfolio
         </NavLink>
       </div>
     </nav>
