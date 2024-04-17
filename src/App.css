@@ -3,6 +3,8 @@ body {
     position: relative;
     min-height: 100vh;
     margin: 0px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .footer {
@@ -38,4 +40,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    display: flex;
+    border: 2px solid #77047f;
+    justify-content: right;
+    align-content: center;
+}
+
+.img-content {
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+    width: 2%;
+
 }
