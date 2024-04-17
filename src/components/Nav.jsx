@@ -8,7 +8,7 @@ import {
   faBriefcase,
   faFileInvoice,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "/public/img/logilinsiji.png";
+import logo from "../assets/img/logilinsiji.png";
 
 export default function Nav() {
   return (

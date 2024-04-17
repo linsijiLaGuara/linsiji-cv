@@ -9,7 +9,7 @@
 }
 
 .logo {
-    width: 5%;
+    width: 80px; /* Ajustar el tamaño del logo */
     padding-left: 1%;
 }
 
@@ -22,7 +22,7 @@
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .nav-link {

@@ -1,7 +1,6 @@
-
-
 import "./Home.css";
 import Animacion from "./Animacion";
+import linsiji from "../assets/img/chica.jpg";
 
 const Home = () => {
   return (
@@ -9,9 +8,12 @@ const Home = () => {
       <div className="animated-element">
         <h1>Welcome! I'm Yoselin Silva Jimenez (Linsiji) &&</h1>
       </div>
-      <h1 className="texto-alineado">
-        <Animacion />
-      </h1>
+      <div className="img-animacion">
+        <img src={linsiji} alt="chica" className="lin" />
+        <h1 className="texto-alineado">
+          <Animacion />
+        </h1>
+      </div>
     </>
   );
 };

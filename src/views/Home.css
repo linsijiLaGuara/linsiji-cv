@@ -1,5 +1,6 @@
 .animated-element {
-  margin-top: 10%;
+  margin-top: 5%;
+  /* Reducir el margen superior */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +12,15 @@
 
 .texto-alineado {
   display: flex;
-  justify-content: center;
+
   flex-direction: row;
   color: #ffffff;
+}
+
+.img-animacion {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+
 }
